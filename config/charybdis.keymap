@@ -1,10 +1,9 @@
-
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     trackball_listener {
@@ -120,10 +119,10 @@
 
         Mouse {
             bindings = <
-&trans           &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&msc MOVE_Y(10)  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &mkp LCLK
-                                 &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
+&trans          &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&msc MOVE_Y(0)  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &mkp LCLK
+                                &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
             >;
         };
     };
